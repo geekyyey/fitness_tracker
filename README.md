@@ -1,5 +1,16 @@
 # README
 Creating a simple fitness tracker. 
+This app is likely a web application that will track water intake through water logs. 
+Backend:
+Using Ruby on Rails to handle data storage, APIs, and business logic.
+The WaterLogsController manages interactions with the water log data, and the WaterLog model connects to the database.
+Database:
+Rails connects to database to store records like water logs.
+Frontend:
+currently testing frontend that will interact with my website.
+for now I am just testing the backend using curl and seeing raw JSON responses.
+
+Problem:
 Created waterlog and ran into a problem where Rail's autoloader, Zeitwerk could not properly locate and load the WaterLogsController class. When a request was made to http://localhost:3000/water_logs, 
 Rails expected a file named water_logs_controller.rb in the app/controllers/ directory to define the WaterLogsController class. However, one of the following issues prevented this from happening:
 The file name contained an extra space or typo (e.g., water_logs_controller .rb instead of water_logs_controller.rb).
