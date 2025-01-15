@@ -1,5 +1,5 @@
 class WaterLogsController < ApplicationController
   def index
-    @water_logs = WaterLog.all
+    render plain: "DRINK PLENTY OF WATER!"
   end
 end
